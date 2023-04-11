@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/2dae7305dc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Adding Tasks -->
+        <div class="add-tasks">
+            <div class="add-heading">
+                <i class="fa-solid fa-list"></i>
+                <h1>To-Do List</h1> 
+            </div>
+            <div class="input-btn">
+                <input id="input-box" type="text" placeholder="Add your task">
+                <button onclick="addTask()">Add</button>
+            </div>
+        </div>
+
+        <!-- Pending Tasks -->
+        <div class="pending-tasks">
+            <div class="date-wise-tasks">
+                <hr>
+                <span id="task-date"></span>
+                <ul class="pending-list">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
+
+<!-- <li>
+    <input type="checkbox" id="tsk0">
+    <label for="tsk0">Create a Javascript Project</label>
+    <div class="task-options">
+        <i class="fa-regular fa-pen-to-square" onclick="editTask(this)"></i>
+        <i class="fa-solid fa-trash" onclick="deleteTask(this)"></i>
+    </div>
+    <div class="editable">
+        <i class="fa-solid fa-xmark" onclick="crossTask(this)"></i>
+        <i class="fa-solid fa-check" onclick="checkTask(this)"></i>
+    </div>
+</li> -->

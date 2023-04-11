@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+hr{
+    margin-top: 20px;
+}
+
+/* # ------ Navigation Bar ------- # */
+nav {
+   position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 50;
+}
+.navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #270082;
+    padding: 8px 15px;
+}
+.navigation-bar h1 {
+    color: white;
+    font-weight: 500;
+    margin-left: 100px;
+    margin-top: 3px;
+    font-size: 25px;
+}
+.right-content {
+    padding: 10px 100px 10px 0px;
+}
+.right-content a {
+    transition: 0.1s ease-in-out;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.right-content a:hover {
+    border-bottom: 2px solid white;
+}
+
+/* # ------ First-Container ------ # */
+.first-container {
+    background-image: url('images/hero_image.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+    margin-top: 30px;
+}
+.first-content {
+    position: relative;
+    color: white;
+    margin: 0 auto;
+    top: 33%;
+    width: 50%;
+    text-align: center;
+}
+.first-content h1 {
+    font-size: 72px;
+    font-weight: 700;
+}
+.first-content h3 {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.first-content p {
+    margin-top: 30px;
+    line-height: 25px;
+}
+
+
+/* # ------ Second-Container ------ # */
+.second-container {
+    background-color: #281154;
+    height: 690px;
+    z-index: -50;
+}
+.second-content {
+    color: white;
+    margin: 0 auto;
+    width: 54%;
+    text-align: center;
+    padding-top: 70px;
+}
+.second-content span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.second-content span i {
+    font-size: 30px;
+}
+.second-content span h1 {
+    font-size: 33px;
+}
+.second-content h2 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+.second-content p {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.second-content button {
+    background-color:#DC0000;
+    color: white;
+    padding: 10px 8px;
+    font-size: 18px;
+    font-weight: 100;
+    border: none;
+    transition: 0.3s ease-in-out;
+    margin-top: 30px;
+}
+.second-content button:hover {
+    background-color: #ba0404;
+}
+.second-container .lastp{
+    font-weight: 200;
+}
+
+/* # ------ Third Container ------ #*/
+.third-container {
+    text-align: center;
+    height: 1320px;
+}
+.image1{
+    position: relative;
+    bottom: 320px;
+    transform: scale(0.9);
+}
+.third-content {
+    position: relative;
+    width: 61%;
+    margin: 0 auto;
+    bottom: 320px;
+}
+.third-content h2 {
+    font-size: 20px;
+}
+.third-content p {
+    line-height: 25px;
+    font-size: 15px;
+    margin-top: 40px;
+}
+.btn-1 {
+    background-color: #37008E;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 40px;
+    transition: 0.3s ease-in-out;
+    border-color: #37008E;
+}
+.btn-1:hover {
+    background-color: white;
+    color: #37008E;
+    font-weight: 500;
+    border-color: #37008E;
+}
+.image2{
+    position: relative;
+    bottom: 280px;
+}
+
+/* # ------ Fourth-Container -------- # */
+.fourth-container {
+    background-image: url('images/video.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 760px;
+}
+.fourth-content {
+    color: white;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 350px;
+}
+.fourth-content h2 {
+    font-size: 24px;
+}
+.fourth-content p{
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* # ------ Fifth-Container ------ #*/
+.fifth-container {
+    display: flex;
+    padding: 100px;
+    width: 85%;
+    margin: 0 auto;
+    gap: 80px;
+}
+.fifth-container p {
+    margin-top: 25px;
+    font-size: 14px;
+    line-height: 30px;
+}
+.fifth-content button {
+    margin-top: 20px;
+}
+
+/* # ------ Footer Container ------ # */
+.footer-container {
+    background-color: #1B0058;
+}
+.footer-content {
+    padding: 50px 150px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.sub-content h3 {
+    border-bottom: 1px solid white;
+    width: 230px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.footer-links {
+    margin-top: 15px;
+}
+.footer-links a{
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 300;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* # ------- Copyright ------ # */
+.copyright {
+    background-color: #270082;
+}
+.copyright p {
+    padding: 10px;
+    color: white;
+    text-align: center;
+}

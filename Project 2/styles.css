@@ -1,0 +1,124 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.top-container {
+    background-image: url(images/developer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:749px;
+}
+
+.first-line h1, .first-line p{
+    display:inline;
+    text-align: left;
+    text-transform: none;
+}
+
+.top-content {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    left: 24%;
+    top:7%;
+    line-height: 80px;
+}
+
+.dark-content {
+    height: 250px;
+    background-color: #161619;
+}
+
+.dark-content h3 {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 72px;
+    padding-top: 40px;
+}
+
+.dark-content span {
+    font-size: 144px;
+}
+
+.card-container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.card {
+    max-width: 320px;
+    height: 450px;
+    margin: 100px 0px 20px 0px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.card-content {
+    padding: 15px;
+    font-size: 10px;
+}
+
+.card-content h1 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.card:hover {
+    transition: 0.3s ease;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.details {
+    display: flex;
+}
+
+.details-left {
+    background-color: #515603;
+    color: white;
+}
+
+.details-left-content h1, .details-right-content h1{
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.details-left-content p, .details-right-content p {
+    font-size: 15px;
+    margin-bottom: 15px;
+    line-height: 24px;
+}
+
+.details-right {
+    background-color: #722300;
+    color: white;
+}
+
+.details-left-content{
+    margin: 60px 70px 0px 90px;
+}
+
+.details-right-content {
+    margin: 60px 70px 40px 90px;
+}
+
+.footer {
+    background-color: #000000;
+}
+
+.footer h1 {
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 30px 0px 30px 0px;
+    text-align: center;
+}

@@ -1,0 +1,209 @@
+* {
+    margin:0;
+    padding:0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+hr {
+    margin-top: 30px;
+}
+
+/* # ------ Nav-Container ------ #*/
+
+nav {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    top:0;
+    z-index: 50;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 140px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.nav-container img {
+    width: 150px;
+}
+.nav-container i {
+    font-size: 28px;
+    margin-top: 16px;
+}
+
+/* # ------ Top-Container ------ # */
+
+.top-img-heading {
+    display: flex;
+    margin: 100px 100px 0px 190px;
+}
+.top-image img{
+    width: 500px;
+}
+.top-heading {
+    width: 40%;
+    margin-left: 140px;
+    margin-top: 80px;
+}
+.top-heading span {
+    background-color: #149F39;
+    color: white;
+    font-size: 14px;
+    padding: 8px 30px;
+}
+.top-heading h1 {
+    margin-top: 25px;
+    font-size: 72px;
+    font-weight:900;
+}
+.top-heading p {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.top-heading button {
+    background-color: #FFC066;
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding:15px;
+    margin-top: 30px;
+    transition: 0.3s ease;
+}
+.top-heading button:hover {
+    transition: 0.3s ease;
+    background-color: #f9b14c;
+}
+
+/* # ------ Cards ------ #*/
+
+.cards-container {
+    display: flex;
+    margin-top: 60px;
+    justify-content:center;
+    gap: 40px;
+}
+.card {
+    display: flex;
+    gap: 10px;
+    width: 17%;
+}
+.card img {
+    width: 50px;
+}
+.info-card-about {
+    line-height: 16px;
+}
+.info-card-about h5 {
+    font-size: 15px;
+    font-weight: 600;
+}
+.info-card-about p {
+    margin-top: 4px;
+    font-size: 12px;
+}
+
+/* # ------ Mid-Container ------ #*/
+
+.mid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mid-heading {
+    margin-top: 60px;
+    text-align: center;
+}
+.mid-heading span {
+    background-color: #149F39;
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+}
+.mid-heading h2 {
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 30px;
+}
+.grid-images {
+    margin-top: 40px;
+    margin-bottom: 100px;
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+        "I1 I1 I2 I3"
+        "I1 I1 I2 I7"
+        "I4 I5 I6 I7";
+}
+.grid-images img {
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+.grid-images img:hover {
+    transform: scale(1.05);
+}
+.image1 {
+    grid-area: I1;
+}
+.image2 {
+    grid-area: I2;
+}
+.image3 {
+    grid-area: I3;
+}
+.image4 {
+    grid-area: I4;
+}
+.image5 {
+    grid-area: I5;
+}
+.image6 {
+    grid-area: I6;
+}
+.image7 {
+    grid-area: I7;
+}
+
+/* # ----- Footer ------ # */
+
+.footer-container {
+    background-color: #FFF0DB;
+    padding: 40px 190px;
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+.footer-image img{
+    width: 170px;
+}
+.main h3, .support h3, .newsletter h3 {
+    color: #565656;
+    font-size: 17px;
+}
+.footer-links {
+    margin-top: 10px;
+}
+.footer-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+.footer-links a:hover {
+    text-decoration: underline;
+}
+.newsletter input {
+    margin-top: 10px;
+    padding: 2px 5px;
+    width: 250px;
+}
+.newsletter h3 {
+    margin-top: 10px;
+}
+.newsletter i {
+    margin-right: 10px;
+    margin-top: 10px;
+}

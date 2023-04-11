@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: rgb(91, 25, 177);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 30%;
+    margin: 0;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: white;
+    padding: 60px 30px;
+    box-shadow: 0px -1px 8px 0px rgba(0,0,0,0.31);
+    border-radius: 10px;
+}
+
+/* ----------------------- Add Tasks ----------------------- */
+.add-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.add-heading h1 {
+    text-align: left;
+    font-size: 25px;
+    margin-left: 10px;
+    color: rgb(11, 25, 148);
+}
+
+.add-heading i {
+    color: rgb(11, 25, 148);
+}
+
+
+.input-btn {
+    display: flex;
+    background-color: rgb(233, 231, 231);
+    border-radius: 25px;
+}
+
+.input-btn input {
+    width: 100%;
+    padding:18px 30px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 15px;
+}
+
+.input-btn button {
+    width: 20%;
+    border-radius: 25px;
+    border: none;
+    color: white;
+    background-color: rgb(250, 97, 41);
+    transition: 0.3s ease-in-out;
+    font-size: 15px;
+}
+
+.input-btn button:hover {
+    background-color: rgb(255, 68, 0);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.input-btn button:active {
+    transition: 0.1s;
+    transform: scale(0.97);
+}
+
+.input-btn button:first-child {
+    /* position: relative;
+    right: -100px; */
+    background-color: violet;
+}
+
+/* ----------------------- Pending Tasks ----------------------- */
+
+.pending-tasks {
+    margin-top: 20px;
+}
+
+.pending-tasks hr {
+    border: 1px solid rgb(196, 196, 196);
+}
+
+.date-wise-tasks hr:first-child{
+    margin-bottom: 20px;
+}
+
+#task-date {
+    color: rgb(180, 180, 180);
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 13px;
+}
+
+.pending-list {
+    margin-top: 10px;
+}
+
+.pending-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    margin-top: 10px;
+}
+
+.pending-list li label {
+    display: flex;
+    user-select: none;
+    cursor: pointer;
+    max-width: 85%;
+    
+    white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+    white-space: -webkit-pre-wrap;          /* Chrome & Safari */ 
+    white-space: -pre-wrap;                 /* Opera 4-6 */
+    white-space: -o-pre-wrap;               /* Opera 7 */
+    white-space: pre-wrap;                  /* CSS3 */
+    word-wrap: break-word;                  /* Internet Explorer 5.5+ */
+    word-break: break-all;
+    white-space: normal;
+}
+
+/* Checkbox styling */
+
+/* Removing default checkbox */
+.pending-list li input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+}
+
+
+.pending-list li label::before {
+    content: '';
+    min-width: 18px;
+    height: 18px;
+    border: 1px solid rgb(145, 144, 144);
+    border-radius: 20px;
+    margin-top: 1px;
+    margin-right: 15px;
+    transform: translate(0px, -2px);
+}
+
+.pending-list li input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+}
+
+.pending-list li input[type="checkbox"]:hover + label::before {
+    background-color: rgb(255, 227, 217);
+    transition: 0.1s ease-in-out;
+}
+
+.pending-list li input[type="checkbox"]:checked + label::before {
+    content: "-";
+    background-color: rgb(255, 117, 67);
+    transition: 0.1s ease-in-out;
+}
+
+.pending-list li input[type="text"] {
+    margin-top: 0px;
+    width: 100%;
+    padding: 13px 18px;
+    font-size: 16px;
+    border: 2px solid rgb(255, 117, 67);
+}
+
+.pending-list li i {
+    padding: 7px 7px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.2s ease-in-out;
+    margin-left: 5px;
+}
+.pending-list li i:hover {
+    color: white;
+    background-color: rgb(255, 79, 79);
+}
+
+.pending-list li i:active {
+    background-color: rgb(211, 55, 55);
+    transition: 0.1s ease-in-out;
+}
+
+.task-options i:nth-child(1):hover {
+    background-color: #007bff;
+}
+
+.editable {
+    display: none;
+}
+
+.editable i:nth-child(1){
+    padding: 7px 9px;
+}
+
+.editable i:nth-child(2):hover {
+    background-color: rgb(2, 209, 2);
+}
+
+/* Media Query */
+@media only screen and (max-width: 1700px) {
+
+    .container {
+        width: 40%;
+    }
+
+    .input-btn input {
+        border-radius: 40px;
+    }
+
+    .pending-list li label {
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width: 1300px) {
+
+    .container {
+        width: 50%;
+    }
+
+    .input-btn input {
+        border-radius: 40px;
+    }
+
+    .pending-list li label {
+        font-size: 14px;
+        max-width: 80%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    
+    .container {
+        width: 75%;
+    }
+
+    .input-btn {
+        display: block;
+        background-color: white;
+    }
+
+    .input-btn input {
+        padding: 15px 30px;
+        background-color: rgb(233, 231, 231);
+    }
+
+    .input-btn button {
+        width: 100%;
+        margin-top: 10px;
+        padding: 15px 30px;
+    }
+}

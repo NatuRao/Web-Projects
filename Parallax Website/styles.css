@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.top-container {
+    background-image: url('images/image1.png');
+    min-height: 100%;
+}
+
+.top-container, .mid-container, .bot-container {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+} 
+
+.mid-container {
+    background-image: url('images/image2.png');
+    background-position: top;
+    min-height: 600px;
+}
+
+.bot-container {
+    background-image: url('images/image3.png');
+    min-height: 600px;
+}
+
+.top-heading, .mid-heading, .bot-heading {
+    background-color: #313534;
+    width: 41%;
+    position: absolute;
+    top:45%;
+    left:31%;
+    text-align: center;
+}
+
+.top-heading p, .mid-heading p, .bot-heading p{
+    position: relative;
+    font-size: 55px;
+    color: #F7ECE5;
+    padding: 25px 60px;
+}
+
+.mid-heading p, .bot-heading p{
+    font-weight: bolder;
+}
+
+.bot-heading {
+    left:25%;
+    width: 53%;
+}
+
+.mid-heading, .bot-heading {
+    background-color: rgba(20, 20, 20, 0.2);
+}
+
+.content-container, .dark-content-container {
+    padding: 10px 200px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 50px;
+    font-weight: lighter;
+    color: #666666;
+}
+
+.content {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 16px;
+    color:rgb(169, 168, 168)
+}
+
+.dark-content-container {
+    background-color: #313534;
+}
+
+.dark-content-container h1{
+    margin-top: 20px;
+    color: white;
+}
